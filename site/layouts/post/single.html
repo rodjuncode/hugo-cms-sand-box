@@ -11,5 +11,10 @@
       {{ if .Params.image }}<img src="{{ .Params.image }}" alt="{{ .Title }}" />{{ end }}
       {{ .Content }}
     </div>
+    {{ if .Params.quote }}
+    <div class="quote">
+      <quote>{{ .Params.quote }}</quote>
+    </div>
+    {{ end }}
   </div>
 {{ end }}
