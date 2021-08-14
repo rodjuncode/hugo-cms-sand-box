@@ -8,12 +8,14 @@
     </div>
     <div class="cms mw6">
       <p>{{ .Description }}</p>
-      {{ if .Params.image }}<img src="{{ .Params.image }}" alt="{{ .Title }}" />{{ end }}
       {{ .Content }}
     </div>
     {{ if .Params.quote }}
     <div class="quote">
       <quote>{{ .Params.quote }}</quote>
+    </div>
+    <div class="image">
+      {{ if .Params.image }}<img src="{{ .Params.image }}" alt="{{ .Title }}" />{{ end }}
     </div>
     {{ end }}
   </div>
